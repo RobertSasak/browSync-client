@@ -1,0 +1,11 @@
+{
+  "name": "browSync-client",
+  "version": "0.0.1",
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "jquery": "~1.9.1",
+    "bootstrap": "~3.0.0-rc1",
+    "chocolatechip-ui": "~3.0.3"
+  },
+  "devDependencies": {}
+}

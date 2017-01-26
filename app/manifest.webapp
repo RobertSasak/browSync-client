@@ -1,0 +1,17 @@
+{
+  "name": "BrowSync",
+  "description": "",
+  "version": "0.0.49",
+  "launch_path": "/index.html",
+  "icons": {
+    "30": "/res/icon/firefoxOs/icon-30.png",
+    "60": "/res/icon/firefoxOs/icon-60.png",
+    "128": "/res/icon/firefoxOs/icon-128.png",
+    "256": "/res/icon/firefoxOs/icon-256.png"
+  },
+  "developer": {
+    "name": "Robert Sasak",
+    "url": "http://browsync.net"
+  },
+  "default_locale": "en"
+}

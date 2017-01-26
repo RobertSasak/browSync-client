@@ -1,0 +1,8 @@
+node_modules
+bower_components
+browSync-client.sublime-workspace
+.DS_Store
+dist
+release
+.ftppass
+browSync-client.sublime-project

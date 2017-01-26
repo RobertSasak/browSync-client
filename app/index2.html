@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BrowSync</title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name='msapplication-tap-highlight' content='no'>
+	<link rel="apple-touch-icon" href="res/icon/ios/icon-72-2x.png" />
+	<script src="cordova.js" type="text/javascript"></script>
+	<script src="childbrowser.js" type="text/javascript"></script>
+	<script type='text/javascript' src='https://cdn.firebase.com/v0/firebase.js'></script>
+<body>
+	<!-- build:css styles/main.css -->
+	<link rel="stylesheet" type="text/css" href="styles/main.css"></head>
+	<!-- endbuild -->
+	<nav>
+		<h1>BrowSync</h1>
+	</nav>
+	<article class="current">
+		<section>
+			<form action="javascript:connect()">
+				<h2>Settings</h2>
+				<ul class="list" ui-implements="form">
+					<li>
+						<p>
+							In order to start synchronize browsing you need to first pair with chrome extension. To do so choose a secret passphrase and type into the following text field and also into BrowSync chrome extension.
+						</p>
+					</li>
+				</ul>
+				<ul ui-implements="form" class="list">
+					<li class="comp">
+						<div>
+							<label for="userName">Secret passphrase:</label>
+						</div>
+						<aside>
+							<input type="text" name="user.username" autocapitalize="off" autocorrect="off" required id="secret" placeholder="at least 5 characters" pattern=".{5,}" required></aside>
+					</li>
+					<li>
+						<div class='horizontal centered'>
+							<br>
+							<a onclick="connect()" class="button done">
+								Start synchronize browsing <strong id="countdown"></strong>
+							</a>
+						</div>
+					</li>
+				</ul>
+				<h2>Log</h2>
+				<ul class="list" id="log">
+					<li>App started.</li>
+				</ul>
+			</form>
+		</section>
+	</article>
+	<div class="iframeWrap">
+		<iframe></iframe>
+	</div>
+	<!-- build:js scripts/main.js -->
+	<script type="text/javascript" src="scripts/script.js"></script>
+	<!-- endbuild -->
+</body>
+</html>
